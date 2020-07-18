@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { useStyles } from "./style";
+import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { useDispatch } from "react-redux";
 import { addDoing } from "../../actions";
 import Button from "@material-ui/core/Button";
 export default function TextInput(props) {
-  const classes = useStyles();
   const dispatch = useDispatch();
   const [task, setTask] = useState({});
 
