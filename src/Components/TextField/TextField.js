@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { useDispatch } from "react-redux";
-import { addDoing } from "../../actions";
+import { addTodo } from "../../actions";
 import Button from "@material-ui/core/Button";
 export default function TextInput(props) {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export default function TextInput(props) {
     setTask(e.target.value);
   };
   const handleClick = () => {
-    dispatch(addDoing(task));
+    dispatch(addTodo(task));
   };
   return (
     <div>
