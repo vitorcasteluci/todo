@@ -39,7 +39,7 @@ function App() {
                 Done
               </button>
 
-              <button onClick={(key) => youSure(key)}>Delete</button>
+              <button onClick={() => youSure(key)}>Delete</button>
             </>
           ))}
         </div>
@@ -55,7 +55,7 @@ function App() {
               >
                 Doing
               </button>
-              <button onClick={(key) => youSure2(key)}>Delete</button>
+              <button onClick={() => youSure2(key)}>Delete</button>
             </>
           ))}
         </div>
