@@ -23,7 +23,7 @@ export default function TextInput(props) {
           onChange={(e) => handleChange(e)}
         />
         <Button variant="contained" color="primary" onClick={handleClick}>
-          Send
+          Add
         </Button>
       </form>
     </div>
